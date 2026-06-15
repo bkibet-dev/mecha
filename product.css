@@ -2,53 +2,40 @@ body {
     background-color: #f0f0f0;
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 0;
-    display: flex;
+    padding: 20;
+
 }
   h1 {
     color: #333;
     text-align: center;
     margin-top: 20px;
   } 
+
   p {
     color: #666;
     font-size: 16px;
     line-height: 1.5;
     margin: 20px;
   }
-    .product-image  {
+  .product-image  {
     width: 100px;
-    height: 100px;
-    justify-content: center;
-    align-items: center;
+    max-width: 200px;
+    height: 150px;
+    object-fit: contain;
     border-radius: 8px;
+    display: block;
+    margin:0 auto;
+
   }
   .product-list {
     display: flex;
     flex-wrap: wrap;
-   max-width: 900px;
+   max-width: 100px;
     margin: 0px auto; }
 
-
-
-  .product-item     {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    background-color: #fff;
-    border-radius: 8px;
-    
-  }
   .product-price {
     text-align: right;
     min-width: 80px;
   }
-  .product-description {
-    color: #555;
-    font-size: 14px;
-    margin-top: 10px;
-  }
-  .product-item:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-  }
+  
+  
