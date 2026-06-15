@@ -1,5 +1,4 @@
-/* Declaring Variables for colors and styles to maintain consistency across the FAQ section. */
-var {
+:root {
     --primary-color: #007bff;
     --secondary-color: #6c757d;
     --background-color: #f8f9fa;
@@ -14,7 +13,6 @@ var {
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    
 }
 
 .description{
@@ -22,6 +20,30 @@ var {
     line-height: 1.5;
     margin-bottom: 20px;
     text-align: center;
+}
+
+.faq1-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.faq1-column1,
+.faq1-column2{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+}
+
+.faq1-column1{
+    align-items: flex-end;
+}
+
+.faq1-column2{
+    align-items: flex-start;
 }
 
 .faq1{
@@ -33,6 +55,10 @@ var {
     padding: 20px;
     background-color: var(--background-color);
     cursor: arrow;
+}
+
+.faq1:hover{
+    background-color: #e9ecef;
 }
 
 .faq1 .question{
@@ -50,6 +76,7 @@ var {
     line-height: 1.5;
     margin-bottom: 40px;
 }
+
 .faq .btn{
     background-color: #007bff;
     color: white;
