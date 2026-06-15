@@ -17,6 +17,13 @@ var {
     
 }
 
+.description{
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
 .faq1{
     width: 80%;
     max-width: 800px;
