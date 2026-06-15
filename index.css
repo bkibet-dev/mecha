@@ -68,3 +68,74 @@ header {
     background-color: #cc0000;
     color: #fff;
 }
+
+.definition {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 60px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+    flex-wrap: wrap;
+}
+
+.definition-content {
+    flex: 1;
+    min-width: 320px;
+    display: flex;
+    flex-direction: column;
+}
+
+.definition-title {
+    font-size: 3rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    line-height: 1.1;
+}
+
+.definition-subtitle {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+.definition-content .text {
+    color: #999;
+    font-size: 1.0rem;
+    margin-top: 12px;
+    max-width: 320px;
+}
+
+.definition-content .btn-accent {
+    align-self: flex-start;
+    background-color: #ff3333;
+    color: #fff;
+    padding: 8px 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.definition-content .btn-accent:hover {
+    background-color: #cc0000;
+}
+
+.definition-image {
+    flex: 1;
+    min-width: 320px;
+    max-width: 500px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.definition-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    display: block;
+}
