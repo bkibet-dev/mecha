@@ -1,0 +1,15 @@
+:root{
+    --background-color: black;
+    --text-color:white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#div2{
+    margin-right: auto;
+
+    
+}
