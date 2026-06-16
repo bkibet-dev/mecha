@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Mecha Company</title>
+    <link rel="stylesheet" href="/contact.css">
+</head>
+<body>
+
+
+    <section class="contact-us">
+
+        <div class="description">
+            <h3 class="title">Contact Us</h3>
+            <p class="summary">Please reach us out to</p>
+        </div>
+
+        <div class="container">
+            <div class="column1">
+                <form enctype="multipart/form-data" action="index.php" method="POST">
+                    <label for="username">Username</label>
+                    <input id="username" type="text" name="username" placeholder="Your name">
+
+                    <label for="tel">Tel No.</label>
+                    <input id="tel" type="tel" name="tel" placeholder="+254702908984">
+
+                    <label for="email">Email</label>
+                    <input id="email" type="email" name="email" placeholder="mechacompany@gmail.com">
+
+                    <label for="quiz">Inquiry</label>
+                    <textarea id="quiz" name="quiz" placeholder="Your message"></textarea>
+
+                    <button type="submit">Send Message</button>
+                </form>
+            </div>
+
+            <div class="column2">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Email</th>
+                            <th>Tel Number</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>mechacompany@gmail.com</td>
+                            <td>+254702809243</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <h3>Location</h3>
+                <a href="https://maps.app.goo.gl/3KRmJTUFkFpPvKPM7" target="_blank">Ngong Lane Plaza along Ngong Road in Nairobi</a><br>
+                <img src="/images/ngong.png" width="250" alt="Ngong Lane Plaza map">
+
+            </div>
+        </div>
+
+      
+    </section>
+    
+</body>
+</html>

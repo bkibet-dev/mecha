@@ -9,7 +9,6 @@ body {
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
     padding-top: 80px;
-    padding-bottom: 60px;
 }
 
 header {
@@ -141,6 +140,101 @@ header {
     height: 320px;
     object-fit: cover;
     display: block;
+}
+
+/* Testimonial Section */
+.testimonial {
+    padding: 80px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 1.1rem;
+    letter-spacing: 2px;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 40px;
+    border-left: 3px solid #ff3333;
+    padding-left: 10px;
+}
+
+.testimonial-card {
+    background-color: #0f1419;
+    padding: 40px;
+    border-left: 3px solid #ff3333;
+    border-radius: 4px;
+}
+
+.testimonial-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #ffffff;
+    margin-bottom: 25px;
+    font-style: italic;
+}
+
+.testimonial-author {
+    margin-bottom: 15px;
+}
+
+.author-name {
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 0.95rem;
+}
+
+.author-role {
+    color: #999;
+    font-size: 0.85rem;
+    margin-top: 3px;
+}
+
+.testimonial-rating {
+    color: #ff3333;
+    font-size: 1rem;
+    letter-spacing: 2px;
+}
+
+/* Why Choose Mecha Section */
+.why-mecha {
+    padding: 80px 20px;
+    max-width: 1140px;
+    margin: 0 auto;
+    background-image: url('./images/mecha.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: relative;
+    background-repeat: no-repeat;
+}
+
+.why-grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.why-card {
+    flex: 1 1 300px;
+    background-color: #0f1419;
+    padding: 30px;
+    border-top: 3px solid #ff3333;
+    border-radius: 4px;
+}
+
+.why-card h4 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #ffffff;
+    margin-bottom: 12px;
+    letter-spacing: 1px;
+}
+
+.why-card p {
+    color: #999;
+    font-size: 0.9rem;
+    line-height: 1.6;
 }
 
 footer {
