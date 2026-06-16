@@ -107,7 +107,7 @@ header {
 .definition-content .text {
     color: #fff;
     font-size: 1.0rem;
-    margin-top: 12px;
+    margin-top: 14px;
     max-width: 320px;
 }
 
@@ -121,6 +121,7 @@ header {
     font-size: 0.8rem;
     letter-spacing: 1px;
     text-decoration: none;
+    margin-top: 18px;
 }
 
 .definition-content .btn-accent:hover {
@@ -196,7 +197,6 @@ header {
     letter-spacing: 2px;
 }
 
-/* Why Choose Mecha Section */
 .why-mecha {
     padding: 80px 20px;
     max-width: 1140px;
