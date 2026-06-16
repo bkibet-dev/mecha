@@ -91,20 +91,7 @@
             font-weight: 700;
         }
 
-        .breadcrumb {
-            font-size: 14px;
-            color: #888;
-        }
-
-        .breadcrumb a {
-            color: #888;
-            text-decoration: none;
-        }
-
-        .breadcrumb a:hover {
-            color: #fff;
-        }
-
+        
         .main-container {
             max-width: 1200px;
             margin: 0 auto;
