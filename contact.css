@@ -55,7 +55,22 @@ body {
     color: rgba(245, 247, 251, 0.8);
     line-height: 1.7;
 }
+ul{
+    display: flex;
+    gap: 100px;
+    list-style: none;
+    padding: 0%;
+    margin:10px
+}
+ul li a{
+    color: #f5f7fb;
+    
+}
+ul li a:hover{
+    color: black;
+    background-color: aliceblue;
 
+}
 .container {
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
