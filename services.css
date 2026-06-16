@@ -1,52 +1,156 @@
-body {
-    font-family: Arial, sans-serif;
+/* ==========================================================================
+   1. RESET & BASE STYLES
+   ========================================================================== */
+* {
     margin: 0;
-    background: #f4f6f9;
-}
-
-header,
-footer {
-    background: #0d6efd;
-    color: white;
-    text-align: center;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
     padding: 0;
+    box-sizing: border-box;
 }
 
-nav li {
-    display: inline-block;
-    margin: 0 10px;
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #0b0b0b; /* Deep black background */
+    color: #e0e0e0; /* Light gray text for high readability against black */
 }
 
-nav a {
-    color: white;
+/* ==========================================================================
+   2. HEADER & NAVIGATION
+   ========================================================================== */
+header {
+    background-color: #141414; /* Off-black for contrast */
+    border-bottom: 3px solid #d32f2f; /* Crimson red accent line */
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header h1 {
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Red marker on the first half of the brand name for a 'Mecha' tech vibe */
+header h1::first-letter {
+    color: #d32f2f;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav a {
+    color: #b0b0b0;
     text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+/* Hover and Active States */
+header nav a:hover,
+header nav a:focus {
+    color: #d32f2f; /* Turns red on hover */
+}
+
+/* Highlight the current page */
+header nav a[href="services.html"] {
+    color: #d32f2f;
+    border-bottom: 2px solid #d32f2f;
+    padding-bottom: 4px;
+}
+
+/* ==========================================================================
+   3. MAIN CONTENT
+   ========================================================================== */
+main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
 }
 
 section {
-    padding: 20px;
+    margin-bottom: 3rem;
 }
 
-article {
-    background: white;
-    margin: 15px 0;
-    padding: 15px;
-    border-radius: 8px;
+section h2 {
+    color: #ffffff;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
 }
+
+/* Clean red underline pattern under section headers */
+section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background-color: #d32f2f;
+}
+
+section p {
+    color: #a0a0a0;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    max-width: 800px;
+}
+
+/* ==========================================================================
+   4. SERVICES CARD GRID (Layout)
+   ========================================================================== */
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
 }
 
 .services-container article {
-    background: white;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    background-color: #1a1a1a; /* Dark gray/black card background */
+    border: 1px solid #2d2d2d;
+    border-left: 4px solid #d32f2f; /* Solid red accent left border */
+    padding: 2rem;
+    border-radius: 4px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Card Hover effect */
+.services-container article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(211, 47, 47, 0.15); /* Subtle red glow */
+    background-color: #222222;
+}
+
+.services-container h3 {
+    color: #ffffff;
+    font-size: 1.3rem;
+    margin-bottom: 0.75rem;
+}
+
+.services-container p {
+    color: #b0b0b0;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* ==========================================================================
+   5. FOOTER
+   ========================================================================== */
+footer {
+    background-color: #0b0b0b;
+    border-top: 1px solid #2d2d2d;
+    color: #707070;
+    text-align: center;
+    padding: 2rem 1rem;
+    margin-top: 4rem;
+    font-size: 0.9rem;
 }
