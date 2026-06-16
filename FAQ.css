@@ -1,5 +1,6 @@
 :root {
     --primary-color: #007bff;
+    --button-color: #ff3333;
     --secondary-color: #6c757d;
     --background-color: #fff;
     --text-color: #ffff;
@@ -160,7 +161,7 @@ header {
 }
 
 .faq .btn{
-    background-color: var(--primary-color);
+    background-color: var(--button-color);
     color: var(--text-color);
     padding: 10px 20px;
     border: none;
@@ -173,5 +174,5 @@ header {
 }
 
 .faq .btn:hover{
-    background-color: #0056b3;
+    background-color: #cc0000;
 }
